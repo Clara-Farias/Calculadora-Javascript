@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>    
+        var result;
+        let n1 = prompt("Digite o Número 1 ->");
+        let n2 = prompt("Digite o Número 2 ->");
+        let operacao = prompt("Digite o operadorador (+ | - | / | *)");
+
+        var numero1 = parseFloat(n1);
+        var numero2 = parseFloat(n2);
+switch (operacao) {
+case "+":
+result = numero1 + numero2;
+alert("Resultado da Soma -> " + result);
+break;
+case "-":
+result = numero1 - numero2;
+alert("Resultado da Subtração -> " + result);
+break;
+case "/":
+result = numero1 / numero2;
+alert("Resultado da Divisão -> " + result);
+break;
+case "*":
+result = numero1 * numero2;
+alert("Resultado da Multiplicação ->  " + result);
+break;
+}
+    </script>
+</body>
+</html>
