@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Calculadora</title>
 </head>
 <body>
-  <h1>Calculadora</h1>
+  <div align="center">
+  <h1>Calculadora</h1><br>
+  <form>
   <label>Primeiro número:</label>
-  <input type="number" id="num1">
+  <input type="number" id="n1">
   <br>
   <br>
   <label>Segundo número:</label>
-  <input type="number" id="num2">
-  <br>
-  <br>
+  <input type="number" id="n2">
+  <br><br>
+  <input type="reset"><br><br>
+</form>
   <button onclick="somar()">Somar</button>
   <button onclick="subtrair()">Subtrair</button>
   <button onclick="multiplicar()">Multiplicar</button>
   <button onclick="dividir()">Dividir</button>
+  
+
   <br>
   <br>
   <label>Resultado:</label>
   <span id="resultado"></span>
+</div>
+
   <script>
     function somar() {
-      var num1 = parseFloat(document.getElementById("num1").value);
-      var num2 = parseFloat(document.getElementById("num2").value);
+      var num1 = parseFloat(document.getElementById("n1").value);
+      var num2 = parseFloat(document.getElementById("n2").value);
       var resultado = num1 + num2;
       document.getElementById("resultado").innerHTML = resultado;
     }
     function subtrair() {
-      var num1 = parseFloat(document.getElementById("num1").value);
-      var num2 = parseFloat(document.getElementById("num2").value);
+      var num1 = parseFloat(document.getElementById("n1").value);
+      var num2 = parseFloat(document.getElementById("n2").value);
       var resultado = num1 - num2;
       document.getElementById("resultado").innerHTML = resultado;
     }
     function multiplicar() {
-      var num1 = parseFloat(document.getElementById("num1").value);
-      var num2 = parseFloat(document.getElementById("num2").value);
+      var num1 = parseFloat(document.getElementById("n1").value);
+      var num2 = parseFloat(document.getElementById("n2").value);
       var resultado = num1 * num2;
       document.getElementById("resultado").innerHTML = resultado;
     }
     function dividir() {
-      var num1 = parseFloat(document.getElementById("num1").value);
-      var num2 = parseFloat(document.getElementById("num2").value);
+      var num1 = parseFloat(document.getElementById("n1").value);
+      var num2 = parseFloat(document.getElementById("n2").value);
       var resultado = num1 / num2;
       document.getElementById("resultado").innerHTML = resultado;
 
-    }
+    }   
   </script>
 </body>
 </html>
